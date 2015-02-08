@@ -1,0 +1,19 @@
+<h1 class='tube-sm text-center'>Artist Profiles</h1>
+<div class='profile-container'>
+  {{#each artist in model}}
+  <div class='col-lg-2 profile-box'>
+    <a href="#">link to user</a>
+    <div class='avatar'>
+      {{artist.avatar}}
+    </div>
+    <div class='name-text'>
+      {{artist.firstName}} {{artist.lastName}}
+    </div>
+  </div>
+  {{/each}}
+
+<div>
+  <button>New Artist</button>
+</div>
+
+{{outlet}}
